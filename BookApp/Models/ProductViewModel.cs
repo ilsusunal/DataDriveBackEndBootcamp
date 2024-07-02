@@ -9,5 +9,6 @@ namespace BookApp.Models
     {
         public List<Book> Books { get; set;} = null!;
         public List<Category> Categories{ get; set; } = null!;
+        public string? SelectedCategory { get; set; }
     }
 }
