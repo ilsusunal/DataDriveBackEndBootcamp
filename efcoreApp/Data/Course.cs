@@ -6,10 +6,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace efcoreApp.Data
 {
-    public class Classes
+    public class Course
     {
         [Key]
-        public int ClassId { get; set; }
-        public string? ClassName { get; set; }
+        public int CourseId { get; set; }
+        public string? CourseName { get; set; }
     }
 }
