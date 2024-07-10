@@ -8,7 +8,7 @@ builder.Services.AddDbContext<BlogContext>(options => {
     options.UseSqlite(connectionString);
 });
 var app = builder.Build();
-
+SeedData.CreateTestData(app);
 app.MapGet("/", () => "Hello World!");
 
 app.Run();

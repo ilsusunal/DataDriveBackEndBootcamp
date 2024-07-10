@@ -41,14 +41,14 @@ namespace BlogApp.Data.Concrete.EfCore
                         Content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                         PublishedOn = DateTime.Now.AddDays(-5),
                         IsPublished = true,
-                        Tags = context.Tags.Take(3).ToList(),
+                        Tags = context.Tags.Take(1).ToList(),
                         UserId = 2},
                     new Entity.Post{
                         Title = "Basic Metrodivania Game With Unity",
                         Content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                         PublishedOn = DateTime.Now.AddDays(-3),
                         IsPublished = true,
-                        Tags = context.Tags.Take(3).ToList(),
+                        Tags = context.Tags.Take(2).ToList(),
                         UserId = 3}
                         
                 );
