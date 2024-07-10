@@ -11,6 +11,9 @@ builder.Services.AddDbContext<BlogContext>(options => {
     options.UseSqlite(builder.Configuration["ConnectionStrings:sql_connection"]);
 });
 var app = builder.Build();
+
+app.UseStaticFiles();
+
 SeedData.CreateTestData(app);
 
 app.MapDefaultControllerRoute();
