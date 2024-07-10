@@ -6,6 +6,7 @@ public class Post{
     public string? Content { get; set;}
     public DateTime PublishedOn { get; set;}
     public bool IsPublished { get; set;}
+    public string? Image { get; set;}
     public int UserId { get; set;}
     public User User { get; set;} = null!;
     public List<Tag> Tags{ get; set; } = new List<Tag>();

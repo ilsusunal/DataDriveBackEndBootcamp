@@ -31,7 +31,8 @@ namespace BlogApp.Migrations
                     UserId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     UserName = table.Column<string>(type: "TEXT", nullable: true),
-                    UserEmail = table.Column<string>(type: "TEXT", nullable: true)
+                    UserEmail = table.Column<string>(type: "TEXT", nullable: true),
+                    Image = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -48,6 +49,7 @@ namespace BlogApp.Migrations
                     Content = table.Column<string>(type: "TEXT", nullable: true),
                     PublishedOn = table.Column<DateTime>(type: "TEXT", nullable: false),
                     IsPublished = table.Column<bool>(type: "INTEGER", nullable: false),
+                    Image = table.Column<string>(type: "TEXT", nullable: true),
                     UserId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
